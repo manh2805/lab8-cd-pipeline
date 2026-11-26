@@ -1,0 +1,7 @@
+# Image KHÔNG multi-stage — chỉ dùng để so sánh kích thước (Bước 1.4)
+FROM node:18-alpine
+WORKDIR /app
+COPY app/ .
+RUN npm install
+EXPOSE 3000
+CMD ["node","server.js"]
