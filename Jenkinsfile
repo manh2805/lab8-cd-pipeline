@@ -4,7 +4,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_USER     = 'manh2805'
+        DOCKER_USER     = 'manh28052005'   // tài khoản Docker Hub dùng cho Jenkins (credential docker-hub-credentials_1)
         DOCKER_IMAGE    = "${DOCKER_USER}/devops-lab8-app"
         DOCKER_TAG      = "${env.BUILD_NUMBER}"
         CONTAINER_NAME  = 'lab8-cd-production'
